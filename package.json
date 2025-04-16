@@ -4,10 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "pnpm dlx fastmcp dev ./server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.8.1"
+  "packageManager": "pnpm@10.8.1",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.9.0",
+    "fastmcp": "^1.21.0",
+    "zod": "^3.24.2"
+  }
 }

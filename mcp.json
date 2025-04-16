@@ -1,0 +1,10 @@
+{
+	"mcpServers": {
+		"my-mcp-server": {
+			"command": "pnpm",
+			"args": [
+				"dlx", "tsx", "./server.ts"
+			]
+		}
+	}
+}
