@@ -1,18 +1,20 @@
 {
-  "name": "hello-mcp-ts",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "pnpm dlx fastmcp dev ./server.ts"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.8.1",
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.9.0",
-    "fastmcp": "^1.21.0",
-    "zod": "^3.24.2"
-  }
+	"name": "hello-mcp-ts",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "pnpm dlx tsx ./server.ts",
+		"debug": "npx @modelcontextprotocol/inspector node build/index.js",
+		"test": "pnpm dlx fastmcp dev ./server.ts"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.8.1",
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^1.9.0",
+		"fastmcp": "^1.21.0",
+		"zod": "^3.24.2"
+	}
 }

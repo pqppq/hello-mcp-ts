@@ -76,10 +76,10 @@ server.addPrompt({
 	}
 })
 
-server.start({
-	transportType: "stdio"
-})
 // server.start({
-// 	transportType: "sse", // Server-Sent Events
-// 	sse: { endpoint: "/sse", port: 8080 }
+// 	transportType: "stdio"
 // })
+server.start({
+	transportType: "sse", // Server-Sent Events
+	sse: { endpoint: "/sse", port: 8080 }
+})
